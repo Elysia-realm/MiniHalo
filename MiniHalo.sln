@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor", "Editor\Editor.vcxproj", "{6E50912E-F9FF-474E-AA3B-13A4BEBE7D7D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiniHalo", "MiniHalo\MiniHalo.vcxproj", "{79CD8BB7-8BEF-4874-94F7-BBBE7D6E5F49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79CD8BB7-8BEF-4874-94F7-BBBE7D6E5F49}.Debug|x64.ActiveCfg = Debug|x64
+		{79CD8BB7-8BEF-4874-94F7-BBBE7D6E5F49}.Debug|x64.Build.0 = Debug|x64
+		{79CD8BB7-8BEF-4874-94F7-BBBE7D6E5F49}.Release|x64.ActiveCfg = Release|x64
+		{79CD8BB7-8BEF-4874-94F7-BBBE7D6E5F49}.Release|x64.Build.0 = Release|x64
+		{6E50912E-F9FF-474E-AA3B-13A4BEBE7D7D}.Debug|x64.ActiveCfg = Debug|x64
+		{6E50912E-F9FF-474E-AA3B-13A4BEBE7D7D}.Debug|x64.Build.0 = Debug|x64
+		{6E50912E-F9FF-474E-AA3B-13A4BEBE7D7D}.Release|x64.ActiveCfg = Release|x64
+		{6E50912E-F9FF-474E-AA3B-13A4BEBE7D7D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5AD7D3A-64CB-451A-A478-80EC8415107A}
+	EndGlobalSection
+EndGlobal
