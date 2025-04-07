@@ -1,0 +1,3 @@
+[submodule "MiniHalo/vendor/spdlog"]
+	path = MiniHalo/vendor/spdlog
+	url = https://github.com/gabime/spdlog
