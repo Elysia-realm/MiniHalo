@@ -4,6 +4,9 @@
     <Filter Include="Halo">
       <UniqueIdentifier>{C935867C-B56C-870D-5E59-6D104A6F030F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Halo\Events">
+      <UniqueIdentifier>{8D65FE55-F91A-774B-820F-7122EEC36D4F}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Halo.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Halo\EntryPoint.h">
       <Filter>Halo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Halo\Events\ApplicationEvent.h">
+      <Filter>Halo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Halo\Events\Event.h">
+      <Filter>Halo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Halo\Events\KeyEvent.h">
+      <Filter>Halo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Halo\Events\MouseEvent.h">
+      <Filter>Halo\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Halo\Log.h">
       <Filter>Halo</Filter>

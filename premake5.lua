@@ -31,6 +31,7 @@ project "MiniHalo"
 
     includedirs
     {
+        "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include"
     }
 
