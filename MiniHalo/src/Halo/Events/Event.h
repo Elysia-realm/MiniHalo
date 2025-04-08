@@ -1,9 +1,7 @@
 #pragma once
 
+#include "hapch.h"
 #include "Halo/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace MiniHalo
 {

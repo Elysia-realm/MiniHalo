@@ -1,3 +1,4 @@
+#include "hapch.h"
 #include "Application.h"
 
 #include "Halo/Events/ApplicationEvent.h"

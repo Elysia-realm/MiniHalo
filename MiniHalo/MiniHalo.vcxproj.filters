@@ -34,6 +34,7 @@
     <ClInclude Include="src\Halo\Log.h">
       <Filter>Halo</Filter>
     </ClInclude>
+    <ClInclude Include="src\hapch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Halo\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Halo\Log.cpp">
       <Filter>Halo</Filter>
     </ClCompile>
+    <ClCompile Include="src\hapch.cpp" />
   </ItemGroup>
 </Project>

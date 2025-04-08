@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace MiniHalo
 {
 	class HALO_API MouseMovedEvent : public Event

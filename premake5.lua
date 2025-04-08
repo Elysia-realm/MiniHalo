@@ -23,6 +23,9 @@ project "MiniHalo"
     targetdir ("bin/" ..outputdir.. "/%{prj.name}")
     objdir ("bin-int/" ..outputdir.. "/%{prj.name}")
 
+    pchheader "hapch.h"
+    pchsource "MiniHalo/src/hapch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",
