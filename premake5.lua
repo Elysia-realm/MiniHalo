@@ -15,6 +15,12 @@ workspace "MiniHalo"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root directory (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "MiniHalo/vendor/GLFW/include"
+
+include "MiniHalo/vendor/GLFW"
+
 project "MiniHalo"
     location "MiniHalo"
     kind "SharedLib"
@@ -35,7 +41,14 @@ project "MiniHalo"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"
