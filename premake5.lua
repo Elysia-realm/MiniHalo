@@ -64,14 +64,17 @@ project "MiniHalo"
     
     filter "configurations:Debug"
         defines "HA_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "HA_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "HA_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Editor"
@@ -111,12 +114,15 @@ project "Editor"
 
     filter "configurations:Debug"
         defines "HA_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "HA_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "HA_DIST"
+        buildoptions "/MD"
         optimize "On"

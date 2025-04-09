@@ -37,6 +37,12 @@
     <ClInclude Include="src\Halo\Events\MouseEvent.h">
       <Filter>Halo\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Halo\Layer.h">
+      <Filter>Halo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Halo\LayerStack.h">
+      <Filter>Halo</Filter>
+    </ClInclude>
     <ClInclude Include="src\Halo\Log.h">
       <Filter>Halo</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Halo\Application.cpp">
+      <Filter>Halo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Halo\Layer.cpp">
+      <Filter>Halo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Halo\LayerStack.cpp">
       <Filter>Halo</Filter>
     </ClCompile>
     <ClCompile Include="src\Halo\Log.cpp">
