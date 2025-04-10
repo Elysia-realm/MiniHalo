@@ -23,6 +23,7 @@ public:
 	Editor()
 	{
 		PushLayer(new ExampleLayer());
+		PushOverlay(new MiniHalo::ImGuiLayer());
 	}
 
 	~Editor()

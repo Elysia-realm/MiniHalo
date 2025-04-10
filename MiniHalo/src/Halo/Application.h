@@ -20,6 +20,9 @@ namespace MiniHalo
 
 		void PushLayer(Layer* layer);
 		void PushOverlay(Layer* overlay);
+
+		inline static Application& GetSingleInstance() { return *s_Instance; }
+		inline Window& GetWindow() { return *m_Window; }
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 
@@ -27,6 +30,9 @@ namespace MiniHalo
 		bool m_Running = true;
 
 		LayerStack m_LayerStack;
+
+		// single instance
+		static Application* s_Instance;
 	};
 
 	// To be defined in CLIENT
