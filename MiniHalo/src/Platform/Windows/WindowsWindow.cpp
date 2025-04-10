@@ -5,6 +5,8 @@
 #include "Halo/Events/KeyEvent.h"
 #include "Halo/Events/MouseEvent.h"
 
+#include <glad/glad.h>
+
 namespace MiniHalo
 {
 	static bool s_GLFWInitialized = false;
@@ -47,6 +49,8 @@ namespace MiniHalo
 		
 		m_Window = glfwCreateWindow((int)m_Data.Width, (int)m_Data.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		HA_COER_ASSERT(status, "Failed to initialize Glad!");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 

@@ -18,8 +18,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root directory (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "MiniHalo/vendor/GLFW/include"
+IncludeDir["Glad"] = "MiniHalo/vendor/Glad/include"
 
 include "MiniHalo/vendor/GLFW"
+include "MiniHalo/vendor/Glad"
 
 project "MiniHalo"
     location "MiniHalo"
@@ -42,12 +44,14 @@ project "MiniHalo"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links
     {
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
 
@@ -59,7 +63,8 @@ project "MiniHalo"
         defines
         {
             "HALO_PLATFORM_WINDOWS",
-            "HALO_BUILD_DLL"
+            "HALO_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
     
     filter "configurations:Debug"
