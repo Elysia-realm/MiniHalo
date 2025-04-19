@@ -155,11 +155,13 @@
     <ClInclude Include="src\Halo\Events\KeyEvent.h" />
     <ClInclude Include="src\Halo\Events\MouseEvent.h" />
     <ClInclude Include="src\Halo\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Halo\Input.h" />
     <ClInclude Include="src\Halo\Layer.h" />
     <ClInclude Include="src\Halo\LayerStack.h" />
     <ClInclude Include="src\Halo\Log.h" />
     <ClInclude Include="src\Halo\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\hapch.h" />
   </ItemGroup>
@@ -170,6 +172,7 @@
     <ClCompile Include="src\Halo\LayerStack.cpp" />
     <ClCompile Include="src\Halo\Log.cpp" />
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\hapch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

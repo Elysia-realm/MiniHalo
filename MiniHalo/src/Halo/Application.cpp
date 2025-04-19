@@ -6,6 +6,8 @@
 
 #include <glad/glad.h>
 
+#include "Halo/Input.h"
+
 namespace MiniHalo
 {
 	#define BIND_EVENT_FN(x) std::bind(&x, this, std::placeholders::_1)
@@ -40,6 +42,9 @@ namespace MiniHalo
 			{
 				layer->OnUpdate();
 			}
+
+			auto [x, y] = Input::GetMousePosition();
+			HA_CORE_TRACE("{0}, {1}", x, y);
 
 			m_Window->OnUpdate();
 		}

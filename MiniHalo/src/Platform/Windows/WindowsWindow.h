@@ -15,6 +15,7 @@ namespace MiniHalo
 
 		inline unsigned int GetHeight() const override { return m_Data.Height; }
 		inline unsigned int GetWidth() const override { return m_Data.Width; }
+		inline void* GetNativeWindow() const override { return m_Window; }
 
 		// Window attributes
 		inline void SetEventCallback(const EventCallbackFn& callback) override { m_Data.EvenCallback = callback; }
